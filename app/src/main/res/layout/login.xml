@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <LinearLayout
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -76,7 +77,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
-        <include layout="@layout/button_exit"/>
+        <com.example.ricemachine.ButtonExitLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -17,6 +17,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
+        QRcode = findViewById(R.id.QRcode);
+        IDcard = findViewById(R.id.IDcard);
         QRcode.setOnClickListener(this);
         IDcard.setOnClickListener(this);
     }
