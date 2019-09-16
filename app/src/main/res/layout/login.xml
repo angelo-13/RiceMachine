@@ -71,12 +71,6 @@
         >
     </LinearLayout>
 </LinearLayout>
-    <LinearLayout
-        android:layout_weight="5"
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
 
-        <include layout="@layout/button_exit"/>
-    </LinearLayout>
 
 </LinearLayout>
