@@ -119,13 +119,55 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:layout_weight="1"
+        android:layout_weight="1.5"
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
-        <com.example.ricemachine.constant.ButtonExitLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent">
+            <com.example.ricemachine.constant.ButtonExitLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:id="@+id/line_right"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+            <View
+                android:id="@+id/line_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                android:id="@+id/goods_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/line_right"
+                android:layout_alignBottom="@id/line_bottom"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/goods_cart"
+                android:layout_alignTop="@+id/goods_cart"
+                android:background="#F44336"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="50px" />
+
+        </RelativeLayout>
+
     </LinearLayout>
 
 </LinearLayout>
