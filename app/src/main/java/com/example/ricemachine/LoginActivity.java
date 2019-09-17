@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.ricemachine.Base.BaseActivity;
+
 
 public class LoginActivity extends BaseActivity implements View.OnClickListener{
 
@@ -22,6 +24,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
         QRcode.setOnClickListener(this);
         IDcard.setOnClickListener(this);
     }
+
     @Override
     public void onClick(View view){
         switch (view.getId()){

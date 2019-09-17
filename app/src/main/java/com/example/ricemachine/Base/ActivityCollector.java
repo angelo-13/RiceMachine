@@ -1,4 +1,4 @@
-package com.example.ricemachine;
+package com.example.ricemachine.Base;
 
 import android.app.Activity;
 

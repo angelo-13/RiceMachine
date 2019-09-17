@@ -1,4 +1,4 @@
-package com.example.ricemachine;
+package com.example.ricemachine.constant;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+
+import com.example.ricemachine.R;
 
 
 public class ButtonExitLayout extends LinearLayout {
