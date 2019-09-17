@@ -9,15 +9,15 @@ import com.example.ricemachine.Base.BaseActivity;
 
 public class IDcardActivity extends BaseActivity {
 
-    private TextView skip_QRcode;
+    private TextView skip_qr_code;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_idcard);
-        skip_QRcode = findViewById(R.id.skip_IDcard);
-        skip_QRcode.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);
-        skip_QRcode.getPaint().setAntiAlias(true);
-        skip_QRcode.setOnClickListener(new View.OnClickListener() {
+        skip_qr_code = findViewById(R.id.skip_id_card);
+        skip_qr_code.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG);
+        skip_qr_code.getPaint().setAntiAlias(true);
+        skip_qr_code.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //添加点击事件
