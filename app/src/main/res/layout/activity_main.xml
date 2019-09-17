@@ -33,6 +33,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="请登录"
+            android:textColor="@color/colorButtonText"
+            android:background="@drawable/button_style"
             android:textSize="120px" />
         </LinearLayout>
 
