@@ -4,16 +4,24 @@ public class Goods {
     private String name;
     private int imageId;
 
-    public Goods(String name, int imageId){
-    this.name = name;
-    this.imageId = imageId;
+    public Goods(String name, int imageId) {
+        this.name = name;
+        this.imageId = imageId;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public int getImageId(){
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getImageId() {
         return imageId;
+    }
+
+    public void setImageId(int imageId) {
+        this.imageId = imageId;
     }
 }

@@ -15,9 +15,16 @@ import java.util.Random;
 public class GoodsListActivity extends BaseActivity {
 
     //商品数据，待改
-    private  Goods[] goods = {new Goods("矿泉水",R.drawable.u361), new Goods("加多宝",R.drawable.u361),new Goods("百事",R.drawable.u361),
-            new Goods("健力宝",R.drawable.u361),new Goods("可口可乐",R.drawable.u361),new Goods("水水水水水",R.drawable.u361),
-            new Goods("尖叫",R.drawable.u361),new Goods("好好饮",R.drawable.u361),new Goods("超级好饮",R.drawable.u361)};
+    private  Goods[] goods = {
+            new Goods("矿泉水",R.drawable.u361),
+            new Goods("加多宝",R.drawable.u361),
+            new Goods("百事",R.drawable.u361),
+            new Goods("健力宝",R.drawable.u361),
+            new Goods("可口可乐",R.drawable.u361),
+            new Goods("水水水水水",R.drawable.u361),
+            new Goods("好饮",R.drawable.u361),
+            new Goods("好好饮",R.drawable.u361),
+            new Goods("超级好饮",R.drawable.u361)};
 
     private List<Goods> goodsList = new ArrayList<>();
 

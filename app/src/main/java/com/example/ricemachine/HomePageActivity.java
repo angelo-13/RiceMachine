@@ -6,6 +6,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.ricemachine.Base.BaseActivity;
@@ -14,7 +15,7 @@ public class HomePageActivity extends BaseActivity implements View.OnClickListen
 
     private DrawerLayout mDrawerLayout;
     private ImageView help;
-
+    private Button exchange;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,8 @@ public class HomePageActivity extends BaseActivity implements View.OnClickListen
         mDrawerLayout = findViewById(R.id.drawer_layout);
         help = findViewById(R.id.help);
         help.setOnClickListener(this);
+        exchange =findViewById(R.id.exchange);
+        exchange.setOnClickListener(this);
     }
 
     @Override

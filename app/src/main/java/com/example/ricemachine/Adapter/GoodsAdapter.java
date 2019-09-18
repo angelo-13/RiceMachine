@@ -51,19 +51,19 @@ public class GoodsAdapter extends RecyclerView.Adapter<GoodsAdapter.ViewHolder> 
         final ViewHolder holder = new ViewHolder(view);
         holder.goodsView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                int position = holder.getAdapterPosition();
+            public void onClick(View v) {
+                int position = holder.getLayoutPosition();
                 Goods goods = mGoodsList.get(position);
-                Toast.makeText(view.getContext(),"you clicked view" + goods.getName(),
+                Toast.makeText(v.getContext(),"you clicked view" + goods.getName(),
                         Toast.LENGTH_SHORT).show();
             }
         });
         holder.goodsImage.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                int position = holder.getAdapterPosition();
-                Goods goods = mGoodsList.get(position);
-                Toast.makeText(view.getContext(),"you clicked image" + goods.getName(),
+            public void onClick(View v) {
+                int position = holder.getLayoutPosition();
+                 Goods goods = mGoodsList.get(position);
+                Toast.makeText(v.getContext(),"you clicked image" + goods.getName(),
                         Toast.LENGTH_SHORT).show();
             }
         });
