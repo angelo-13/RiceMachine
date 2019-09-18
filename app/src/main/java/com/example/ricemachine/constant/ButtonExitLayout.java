@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.example.ricemachine.Base.ActivityCollector;
 import com.example.ricemachine.R;
 
 
@@ -21,7 +22,7 @@ public class ButtonExitLayout extends LinearLayout {
         exit.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                ActivityCollector.finishAll();
             }
         });
     }

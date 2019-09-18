@@ -1,5 +1,6 @@
 package com.example.ricemachine;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,9 @@ public class QRcodeActivity extends BaseActivity {
         skip_id_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //添加点击事件
+                Intent intent = new Intent(QRcodeActivity.this, IDcardActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
             }
         });
     }
