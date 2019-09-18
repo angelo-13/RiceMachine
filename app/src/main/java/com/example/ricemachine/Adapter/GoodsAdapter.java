@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
@@ -25,12 +26,14 @@ public class GoodsAdapter extends RecyclerView.Adapter<GoodsAdapter.ViewHolder> 
         CardView cardView;
         ImageView goodsImage;
         TextView goodsName;
+        View goodsView;
 
         public ViewHolder(View view){
             super(view);
             cardView = (CardView) view;
             goodsImage = view.findViewById(R.id.goods_image);
             goodsName = view.findViewById(R.id.goods_name);
+            goodsView = view;
         }
     }
 
@@ -44,6 +47,27 @@ public class GoodsAdapter extends RecyclerView.Adapter<GoodsAdapter.ViewHolder> 
             mContext = parent.getContext();
         }
         View view = LayoutInflater.from(mContext).inflate(R.layout.goods_item , parent,false);
+
+        final ViewHolder holder = new ViewHolder(view);
+        holder.goodsView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int position = holder.getAdapterPosition();
+                Goods goods = mGoodsList.get(position);
+                Toast.makeText(view.getContext(),"you clicked view" + goods.getName(),
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+        holder.goodsImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int position = holder.getAdapterPosition();
+                Goods goods = mGoodsList.get(position);
+                Toast.makeText(view.getContext(),"you clicked image" + goods.getName(),
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
         return new ViewHolder(view);
     }
 

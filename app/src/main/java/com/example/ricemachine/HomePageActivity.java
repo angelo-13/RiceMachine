@@ -3,6 +3,7 @@ package com.example.ricemachine;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -29,6 +30,10 @@ public class HomePageActivity extends BaseActivity implements View.OnClickListen
             case R.id.help:
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 break;
+            case R.id.exchange:
+                Intent intent = new Intent(HomePageActivity.this,GoodsListActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
 
             default:
                 break;
