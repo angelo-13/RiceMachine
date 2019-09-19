@@ -28,9 +28,9 @@
 
                <ImageView
                    android:id="@+id/company"
-                   android:layout_width="wrap_content"
+                   android:layout_width="80dp"
                    android:layout_height="wrap_content"
-                   android:src="@mipmap/ic_launcher"
+                   android:src="@mipmap/logo"
                    android:layout_gravity="center"/>
            </LinearLayout>
        </RelativeLayout>
@@ -152,7 +152,7 @@
                 android:layout_alignBottom="@id/line_bottom"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="8dp"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/shopping_cart"/>
 
             <TextView
                 android:id="@+id/counts"
